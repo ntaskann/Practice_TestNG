@@ -4,9 +4,9 @@
     import utilities.Driver;
 
     public class YeniDriver {
-        @Test
+        @Test(groups = "gp1")
         public void testName() {
-            Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+            Driver.getDriver().get(ConfigReader.getProperty("amazon_url"));
             Driver.closeDriver();
             //Driver.getDriver().get("https://techproeducation.com");
             //Driver.getDriver().get("https://facebook.com");

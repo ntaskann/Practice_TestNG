@@ -21,15 +21,15 @@ public class Practice02 {
  */
     @DataProvider
     public static Object[][] kullanici() {
-        return new Object[][]{{ConfigReader.getProperty("email1"),ConfigReader.getProperty("password1")},
-                {ConfigReader.getProperty("email2"),ConfigReader.getProperty("password2")},
-                {ConfigReader.getProperty("email3"),ConfigReader.getProperty("password3")}};
+        return new Object[][]{{ConfigReader.getProperty("email1"), ConfigReader.getProperty("password1")},
+                {ConfigReader.getProperty("email2"), ConfigReader.getProperty("password2")},
+                {ConfigReader.getProperty("email3"), ConfigReader.getProperty("password3")}};
     }
 
-    @Test (dataProvider = "kullanici")
-    public void testName(String email,String password) throws InterruptedException {
+    @Test(dataProvider = "kullanici")
+    public void testName(String email, String password) throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("herokuUrl"));
-        HerokuPage obj =new HerokuPage();
+        HerokuPage obj = new HerokuPage();
         obj.email.sendKeys(email);
         Thread.sleep(2000);
         obj.password.sendKeys(password);
@@ -39,5 +39,13 @@ public class Practice02 {
         softAssert.assertTrue(obj.yazi.isDisplayed());
         Driver.closeDriver();
         softAssert.assertAll();
+    }
+
+    @Test
+    public void test2() {
+    }
+
+    @Test
+    public void test1() {
     }
 }

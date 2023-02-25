@@ -23,9 +23,9 @@ public class Practice01 {
         //Ülkeler ile şehirleri eşleştiriniz
         Actions actions=new Actions(Driver.getDriver());
         actions.dragAndDrop(dhtmlPage.Seoul,dhtmlPage.Korea).
-                dragAndDrop(dhtmlPage.oslo,dhtmlPage.Norway).
+                dragAndDrop(dhtmlPage.Oslo,dhtmlPage.Norway).
                 dragAndDrop(dhtmlPage.Stockholm,dhtmlPage.Sweden).
-                dragAndDrop(dhtmlPage.Washington,dhtmlPage.abd).
+                dragAndDrop(dhtmlPage.Washington,dhtmlPage.Abd).
                 dragAndDrop(dhtmlPage.Rome,dhtmlPage.Italy).
                 dragAndDrop(dhtmlPage.Madrid,dhtmlPage.Spain).
                 dragAndDrop(dhtmlPage.Copenhagen,dhtmlPage.Denmark).perform();

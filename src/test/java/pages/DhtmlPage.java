@@ -13,7 +13,7 @@ public class DhtmlPage {
     @FindBy (xpath = "//*[@id='countries']//div")
     public List<WebElement> ulkeler;
     @FindBy (xpath = "//*[@id='box1']")
-    public WebElement oslo;
+    public WebElement Oslo;
     @FindBy (xpath = "//*[@id='box2']")
     public WebElement Stockholm;
     @FindBy (xpath = "//*[@id='box3']")
@@ -31,7 +31,7 @@ public class DhtmlPage {
     @FindBy (xpath = "//*[@id='box102']")
     public WebElement Sweden;
     @FindBy (xpath = "//*[@id='box103']")
-    public WebElement abd;
+    public WebElement Abd;
     @FindBy (xpath = "//*[@id='box104']")
     public WebElement Denmark;
     @FindBy (xpath = "//*[@id='box105']")
